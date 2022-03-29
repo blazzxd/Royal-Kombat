@@ -2,6 +2,6 @@
 
 # NFT PROJECT
 
-# Developers: Blazzy, OldStudioConcept
+# Developers: Blazzxd, OldStudioConcept
 
 # Owner: Real Kombat
