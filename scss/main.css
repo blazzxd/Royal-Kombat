@@ -5018,6 +5018,22 @@ body {
   padding: 0;
   min-height: 100vh;
   position: relative;
+  background-color: #01011F;
+}
+
+body::before {
+  content: '';
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/body.jpg);
+  background-size: cover;
+  background-position: center center;
+  mix-blend-mode: multiply;
+  z-index: -1;
 }
 
 main {
