@@ -30,3 +30,37 @@ body{
 main{
     overflow-x: hidden
 }
+
+.section-2{
+    .card{
+        background: rgba( 255, 255, 255, .2);
+        backdrop-filter: blur(40px);
+
+        padding: 20px 40px 50px;
+        text-align: center;
+        border: 1px solid rgba($color: white, $alpha: .5);
+        .icon{
+            height: 170px;
+            transform: translateY(-70%);
+            margin-bottom: -20%;
+            
+            img{
+                height: 100%;
+                filter: drop-shadow(-4px 9px 26px rgba($color: #000000, $alpha: .57));
+            }
+        }
+        h2{
+            font-family: 'Cormorant Garamond', serif;
+            color: $accent;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            width: 95%;
+            margin: 0px auto;
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
