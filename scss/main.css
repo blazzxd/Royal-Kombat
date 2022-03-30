@@ -735,28 +735,28 @@ mark,
 
 @media (min-width: 576px) {
   .container {
-    width: 540px;
+    width: 1040px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 1020px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 1460px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1640px;
     max-width: 100%;
   }
 }
@@ -5038,5 +5038,204 @@ body::before {
 
 main {
   overflow-x: hidden;
+}
+
+.section-2 .card {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 20px 40px 50px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section-2 .card .icon {
+  height: 170px;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  margin-bottom: -20%;
+}
+
+.section-2 .card .icon img {
+  height: 100%;
+  -webkit-filter: drop-shadow(-4px 9px 26px rgba(0, 0, 0, 0.57));
+          filter: drop-shadow(-4px 9px 26px rgba(0, 0, 0, 0.57));
+}
+
+.section-2 .card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #F2A217;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.section-2 .card p {
+  font-family: 'Quicksand', sans-serif;
+  width: 95%;
+  margin: 0px auto;
+  color: white;
+  font-size: 15px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.section-5 .row {
+  position: relative;
+}
+
+.section-5 .content {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 0%;
+  height: 0%;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.section-5 .content .icon {
+  text-align: right;
+  display: none;
+}
+
+.section-5 .content .icon img {
+  height: 500px;
+  -webkit-filter: drop-shadow(27px 26px 6px rgba(0, 0, 0, 0.57));
+          filter: drop-shadow(27px 26px 6px rgba(0, 0, 0, 0.57));
+}
+
+.section-5 .content .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+}
+
+.section-5 .content .close span {
+  font-size: 30px;
+}
+
+.section-5 .content .number {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 380px;
+  position: absolute;
+  opacity: .1;
+  left: -80px;
+  bottom: -160px;
+  display: none;
+}
+
+.section-5 .content h2 {
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.section-5 .content p {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  display: none;
+  opacity: .8;
+}
+
+.section-5 .content.visible::before {
+  content: '';
+  position: absolute;
+  bottom: -155px;
+  right: -155px;
+  height: 450px;
+  width: 450px;
+  background: radial-gradient(#467AFF, rgba(0, 0, 0, 0) 70%);
+  opacity: .4;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.section-5 .card {
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 200px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-5 .card:hover {
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+.section-5 .card .icon {
+  height: 180px;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+
+.section-5 .card .icon img {
+  height: 100%;
+  -webkit-filter: drop-shadow(17px 16px 16px rgba(0, 0, 0, 0.64));
+          filter: drop-shadow(17px 16px 16px rgba(0, 0, 0, 0.64));
+}
+
+.section-5 .card .icon-2 {
+  bottom: 10px;
+}
+
+.section-5 .card .icon-3 {
+  bottom: 10px;
+}
+
+.section-5 .card .icon-7 {
+  bottom: -80px;
+  height: 300px;
+}
+
+.section-5 .card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #F2A217;
+  font-size: 100px;
+  opacity: .5;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.section-5 .card p {
+  font-family: 'Quicksand', sans-serif;
+  width: 95%;
+  margin: 0px auto;
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.section-5 .card-full {
+  height: 400px;
 }
 /*# sourceMappingURL=main.css.map */

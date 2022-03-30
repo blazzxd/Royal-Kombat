@@ -30,3 +30,184 @@ body{
 main{
     overflow-x: hidden
 }
+
+.section-2{
+    .card{
+        background: rgba( 255, 255, 255, .2);
+        backdrop-filter: blur(40px);
+
+        padding: 20px 40px 50px;
+        text-align: center;
+        border: 1px solid rgba($color: white, $alpha: .5);
+        .icon{
+            height: 170px;
+            transform: translateY(-70%);
+            margin-bottom: -20%;
+            
+            img{
+                height: 100%;
+                filter: drop-shadow(-4px 9px 26px rgba($color: #000000, $alpha: .57));
+            }
+        }
+        h2{
+            font-family: 'Cormorant Garamond', serif;
+            color: $accent;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            width: 95%;
+            margin: 0px auto;
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.section-5{
+    .row{
+        position: relative;
+    }
+    .content{
+        background: rgba( 0, 0, 0, .5);
+        backdrop-filter: blur(60px);
+        border: 1px solid rgba($color: white, $alpha: .5);
+        width: 0%;
+        height: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        display: none;
+
+        .icon{
+            text-align: right;
+            display: none;
+            img{
+                height: 500px;
+                filter: drop-shadow(27px 26px 6px rgba($color: #000000, $alpha: .57));
+            }
+        }
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            cursor: pointer;
+            display: none;
+            z-index: 9;
+            span{
+                font-size: 30px;
+            }
+        }
+        .number{
+            font-family: 'Cormorant Garamond', serif;
+            color: white;
+            font-size: 380px;
+            position: absolute;
+            opacity: .1;
+            left: -80px;
+            bottom: -160px;
+            display: none;
+        }
+        h2{
+            color: white;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 60px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            display: none;
+        }
+        p{
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            display: none;
+            opacity: .8;
+        }
+    }
+    .content.visible{
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -155px;
+            right: -155px;
+            height: 450px;
+            width: 450px;
+            background: radial-gradient(#467AFF, rgba(0, 0, 0, 0) 70%);
+            opacity: .4;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    .card{
+        background: rgba( 255, 255, 255, .13);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba($color: white, $alpha: .5);
+        height: 200px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            border: 1px solid rgba($color: white, $alpha: 1);
+            backdrop-filter: blur(0px);
+        }
+        .icon{
+            height: 180px;
+            img{
+                height: 100%;
+                filter: drop-shadow(17px 16px 16px rgba($color: #000000, $alpha: .64));
+            }
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+        }
+
+        .icon-2{
+            bottom: 10px;
+        }
+
+        .icon-3{
+            bottom: 10px;
+        }
+
+        .icon-7{
+            bottom: -80px;
+            height: 300px;
+        }
+        
+
+        h2{
+            font-family: 'Cormorant Garamond', serif;
+            color: $accent;
+            font-size: 100px;
+            opacity: .5;
+            margin-bottom: 10px;
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            width: 95%;
+            margin: 0px auto;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+        }
+    }
+    .card-full{
+        height: 400px;
+    }
+
+}

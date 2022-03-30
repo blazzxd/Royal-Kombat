@@ -8,12 +8,86 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Royal Combat</title>
 	<!-- Bootstrap CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 	<link rel="stylesheet" href="../scss/aos.css" />
 	<link rel="stylesheet" href="../scss/main.css">
+	<style>
+	</style>
 </head>
 <body>
+	<div class="container section-5" style="display: flex; align-items: center;
+	justify-content: center; min-height: 100vh">
+		<div class="row no-gutters gx-5" style="width: 100%">
+			<div class="col-md-6">
+				<div class="row no-gutters g-10">
+					<div class="col-md-6">
+						<div class="card card-full" data-card="1">
+							<h2>01</h2>
+							<p>Vision & Value</p>
+							<div class="icon icon-1"><img src="../img/icons/puzzle-dynamic-premium.png" alt=""></div>
+						</div>
+						<div class="card" data-card="2">
+							<h2>02</h2>
+							<p>Community</p>
+							<div class="icon icon-2"><img src="../img/icons/boy-dynamic-premium.png" alt=""></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card" data-card="3">
+							<h2>03</h2>
+							<p>Metaverse</p>
+							<div class="icon icon-3"><img src="../img/icons/crow-dynamic-premium.png" alt=""></div>
+						</div>
+						<div class="card card-full" data-card="4">
+							<h2>04</h2>
+							<p>Physical World</p>
+							<div class="icon icon-4"><img src="../img/icons/money-bag-dynamic-premium.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
 
-	
+				<div class="row no-gutters">
+					<div class="col-md-6">
+						<div class="card card-full" data-card="5">
+							<h2>05</h2>
+							<p>Events</p>
+							<div class="icon icon-5"><img src="../img/icons/magic-trick-dynamic-premium.png" alt=""></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card card-full" data-card="6">
+							<h2>06</h2>
+							<p>Seedlings</p>
+							<div class="icon icon-6"><img src="../img/icons/chat-bubble-dynamic-premium.png" alt=""></div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="card" data-card="7">
+							<h2>07</h2>
+							<p>Connect your Mind</p>
+							<div class="icon icon-7"><img src="../img/icons/target-dynamic-premium.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="close"><span class="material-icons-outlined">close</span></div>
+				<div class="number">02</div>
+				<div class="row align-items-center" stle="height: 100%">
+					<div class="col-md-6">
+						<h2>Connect your Mind</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni natus assumenda quod? Libero, a maxime! Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora.  Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora. Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora.  Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora. </p>	
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni natus assumenda quod? Libero, a maxime! Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora.  Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil? Rem animi similique architecto tempora. Totam accusantium, maiores ipsam voluptatum harum corrupti officiis nihil. </p>	
+					</div>
+					<div class="col-md-6">
+						<div class="icon icon-7"><img src="../img/icons/target-dynamic-premium.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery first, then Tether, then Bootstrap JS. -->
 	<script src="../js/jquery.js"></script>
@@ -25,6 +99,79 @@
 	  AOS.init();
 	</script>
 
+	<script>
+		let clicable = true;
+		$('.section-5 .card').on('click', function(){
+			if(clicable == false){
+				return false;
+			}
+			let card = $(this).data('card')
+			let title = $(this).find('p').text();
+			$('.section-5 .content .number').text('0' + card)
+			$('.section-5 .content h2').text(title)
+
+			$('.section-5 .content').show();
+			$('.section-5 .content').animate({
+					width:'100%',
+					padding: '20px 50px',
+					height:'100%'
+				}, function(){
+					$('.section-5 .content .close').fadeIn();
+					$('.section-5 .content .icon').fadeIn();
+					$('.section-5 .content .number').fadeIn();
+					$('.section-5 .content h2').fadeIn();
+					$('.section-5 .content p').fadeIn();
+					$('.section-5 .content').addClass('visible');
+				});
+		})
+
+		$('.section-5 .content .close').on("click", function(){
+			clicable = false;
+			$('.section-5 .content .close').fadeOut();
+			$('.section-5 .content .number').fadeOut();
+			$('.section-5 .content .icon').fadeOut();
+			$('.section-5 .content h2').fadeOut();
+			$('.section-5 .content').removeClass('visible');
+			$('.section-5 .content p').fadeOut(function(){
+				$('.section-5 .content').animate({
+					width:'0%',
+					padding:'0%',
+					height:'0%'
+				}, function(){
+					$('.section-5 .content').hide();
+				});
+			});
+			setTimeout(() => {
+				clicable = true;
+			}, 1500);
+		})
+
+		$(document).keyup(function(e) {
+			if (e.key === "Escape") { 
+				if(!$('.section-5 .content').hasClass('visible')){
+					return false;
+				}
+				clicable = false;
+				$('.section-5 .content .close').fadeOut();
+				$('.section-5 .content .number').fadeOut();
+				$('.section-5 .content').removeClass('visible');
+				$('.section-5 .content .icon').fadeOut();
+				$('.section-5 .content h2').fadeOut();
+				$('.section-5 .content p').fadeOut(function(){
+					$('.section-5 .content').animate({
+						width:'0%',
+						padding:'0%',
+						height:'0%'
+					}, function(){
+						$('.section-5 .content').hide();
+					});
+				});
+				setTimeout(() => {
+					clicable = true;
+				}, 1500);
+			}
+		});
+	</script>
 	  
 </body>
 

@@ -735,28 +735,28 @@ mark,
 
 @media (min-width: 576px) {
   .container {
-    width: 540px;
+    width: 1040px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 1020px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 1460px;
     max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1640px;
     max-width: 100%;
   }
 }
