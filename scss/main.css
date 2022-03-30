@@ -5294,4 +5294,11 @@ main {
   color: white;
   font-family: 'Quicksand', sans-serif;
 }
+
+.section-8 .row {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
 /*# sourceMappingURL=main.css.map */
