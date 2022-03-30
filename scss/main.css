@@ -5295,10 +5295,100 @@ main {
   font-family: 'Quicksand', sans-serif;
 }
 
+.section-8 {
+  width: 95%;
+}
+
 .section-8 .row {
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.13);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-8 .newsletter {
+  padding-left: 20px;
+}
+
+.section-8 .newsletter h4 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section-8 .newsletter h4 span {
+  color: #F2A217;
+  font-style: italic;
+}
+
+.section-8 .newsletter p {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.section-8 .newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-8 .newsletter form input {
+  height: 50px;
+  border: none;
+}
+
+.section-8 .newsletter form input[type=text] {
+  padding-left: 20px;
+  display: block;
+  width: 65%;
+  opacity: .8;
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
+}
+
+.section-8 .newsletter form input[type=text]::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-8 .newsletter form input[type=text]:-ms-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-8 .newsletter form input[type=text]::-ms-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-8 .newsletter form input[type=text]::placeholder {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-8 .newsletter form input[type=submit] {
+  display: block;
+  width: 25%;
+  background-color: #903CF2;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-8 .image-card {
+  text-align: center;
+}
+
+.section-8 .image-card img {
+  height: 500px;
+  -webkit-transform: translateY(-45%) scaleX(-1);
+          transform: translateY(-45%) scaleX(-1);
+  margin-bottom: -160px;
+  -webkit-filter: drop-shadow(-20px 13px 26px rgba(0, 0, 0, 0.64));
+          filter: drop-shadow(-20px 13px 26px rgba(0, 0, 0, 0.64));
 }
 /*# sourceMappingURL=main.css.map */
