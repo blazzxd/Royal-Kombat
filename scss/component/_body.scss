@@ -212,6 +212,49 @@ main{
 
 }
 
+.section-6{
+    h2{
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        font-size: 50px;
+    }
+    p{
+        font-family: 'Quicksand', sans-serif;
+        width: 60%;
+        margin: 0px auto;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .card{
+        position: relative;
+        img{
+            height: 600px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .content{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: left;
+            background: rgba( 255, 255, 255, .26);
+            backdrop-filter: blur(30px);
+            padding: 20px 30px;
+            h2{
+                font-size: 28px;
+                text-align: left;
+            }
+            P{
+                text-align: left;
+                width: 100%;
+                color: $accent;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
 
 .section-7{
     .tab-pannel{
