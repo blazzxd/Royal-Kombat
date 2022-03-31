@@ -5059,6 +5059,11 @@ main {
   color: white;
 }
 
+.btn-secondary {
+  background-color: #467AFF;
+  color: white;
+}
+
 .section-2 .card {
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(40px);
@@ -5098,6 +5103,58 @@ main {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.section-3 h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.section-3 h2 span {
+  font-style: italic;
+  color: #F2A217;
+}
+
+.section-3 p {
+  font-family: 'Quicksand', sans-serif;
+  width: 70%;
+  color: white;
+  font-size: 15px;
+}
+
+.section-3 .images {
+  position: relative;
+  background-color: #fff;
+}
+
+.section-3 .images img {
+  position: absolute;
+  height: 500px;
+  top: -250px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: -10px 11px 16px rgba(0, 0, 0, 0.35);
+          box-shadow: -10px 11px 16px rgba(0, 0, 0, 0.35);
+}
+
+.section-3 .images img:nth-child(1) {
+  -webkit-transform: translateX(-180px) rotate(-35deg);
+          transform: translateX(-180px) rotate(-35deg);
+}
+
+.section-3 .images img:nth-child(2) {
+  -webkit-transform: translateX(-100px) rotate(-15deg);
+          transform: translateX(-100px) rotate(-15deg);
+}
+
+.section-3 .images img:nth-child(3) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .section-4 h2 {

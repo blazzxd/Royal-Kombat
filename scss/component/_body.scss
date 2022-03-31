@@ -47,6 +47,10 @@ main{
     background-color: $primary;
     color: white;
 }
+.btn-secondary{
+    background-color: $secondary;
+    color: white;
+}
 
 .section-2{
     .card{
@@ -83,6 +87,49 @@ main{
 }
 .mb-10{
     margin-bottom: 10px;
+}
+
+.section-3{
+    h2{
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        font-size: 60px;
+        margin-bottom: 10px;
+        span{
+            font-style: italic;
+            color: $accent;
+        }
+    }
+    p{
+        font-family: 'Quicksand', sans-serif;
+        width: 70%;
+        color: white;
+        font-size: 15px;
+    }
+
+    .images{
+        position: relative;
+        background-color: #fff;
+        img{
+            position: absolute;
+            height: 500px;
+            top: -250px;
+            width: 400px;
+            object-fit: cover;
+            left: 200px;
+            border-radius: 20px;
+            box-shadow: -10px 11px 16px rgba( 0, 0, 0, .35);
+            &:nth-child(1){
+                transform: translateX(-180px) rotate(-35deg);
+            }
+            &:nth-child(2){
+                transform: translateX(-100px) rotate(-15deg);
+            }
+            &:nth-child(3){
+                transform: rotate(10deg);
+            }
+        }
+    }
 }
 
 .section-4{
