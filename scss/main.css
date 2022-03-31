@@ -5064,6 +5064,180 @@ main {
   color: white;
 }
 
+.section-1 .col-md-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.section-1 .container {
+  width: 80%;
+}
+
+.section-1 .container h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.section-1 .container h2 span {
+  font-style: italic;
+  color: #F2A217;
+}
+
+.section-1 .container p {
+  font-family: 'Quicksand', sans-serif;
+  width: 70%;
+  color: white;
+  font-size: 15px;
+}
+
+.section-1 .container .card {
+  margin-top: 50px;
+  width: 70%;
+  background: linear-gradient(70deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 20px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.section-1 .container .card .col-md-4 {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-1 .container .card .col-md-4:last-child {
+  border-right: none;
+}
+
+.section-1 .container .card h4 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 40px;
+}
+
+.section-1 .container .card p {
+  text-align: center !important;
+  width: 100%;
+  margin: 0px;
+}
+
+.section-1 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.section-1 .right .circle {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 99;
+  left: -100px;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-1 .right .circle .circle-2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-1 .right .background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-1 .right .layer-1 {
+  width: 70%;
+  position: relative;
+}
+
+.section-1 .right .layer-1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70vh;
+}
+
+.section-1 .right .layer-1 .content {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  text-align: center;
+  padding: 20px 0px 20px;
+  position: absolute;
+  margin-top: -50px;
+  width: 100%;
+}
+
+.section-1 .right .layer-1 .content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.section-1 .right .layer-1 .content p {
+  font-family: 'Quicksand', sans-serif;
+  width: 95%;
+  margin: 0px auto;
+  color: #F2A217;
+  font-size: 20px;
+}
+
 .section-2 .card {
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(40px);
