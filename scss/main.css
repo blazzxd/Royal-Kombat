@@ -5031,9 +5031,47 @@ body::before {
   right: 0;
   background-image: url(../img/body.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: top left;
+  -webkit-animation: mymove 120s infinite;
+          animation: mymove 120s infinite;
   mix-blend-mode: multiply;
   z-index: -1;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    background-position: top right;
+  }
+  25% {
+    background-position: center;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    background-position: top right;
+  }
+  25% {
+    background-position: center;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
 }
 
 main {
@@ -5717,5 +5755,105 @@ main {
   margin-bottom: -160px;
   -webkit-filter: drop-shadow(-20px 13px 26px rgba(0, 0, 0, 0.64));
           filter: drop-shadow(-20px 13px 26px rgba(0, 0, 0, 0.64));
+}
+
+.section-9 {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.section-9 .card {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.section-9 .card:hover {
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+.section-9 .card img {
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+.section-9 .card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section-9 .card p {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+}
+
+.overlay-9 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.popUp-9 {
+  background-color: #01011F;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  padding: 30px 50px;
+  overflow: hidden;
+  display: none;
+}
+
+.popUp-9 .content {
+  display: none;
+}
+
+.popUp-9 .close {
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popUp-9 h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.popUp-9 p {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+}
+
+.popUp-9 .icon {
+  position: absolute;
+  bottom: -10%;
+  right: -20%;
+  height: 500px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 /*# sourceMappingURL=main.css.map */
