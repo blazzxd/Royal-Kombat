@@ -1,0 +1,108 @@
+.form-element{
+    label{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: $title;
+    }
+    margin-bottom: 20px;
+    input{
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgba($color: $text, $alpha: .3);
+        outline: none;
+        &::placeholder{
+            transition: all .1s ease-in-out;
+        }
+        &:focus{
+            border-color: $main;
+            &::placeholder{
+                padding-left: 10px;
+            }
+        }
+    }
+    textarea{ 
+        display: block;
+        width: 100%;
+        height: 127px;
+        padding-top: 15px;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgba($color: $text, $alpha: .3);
+        outline: none;
+        &::placeholder{
+            transition: all .1s ease-in-out;
+        }
+        &:focus{
+            border-color: $main;
+            &::placeholder{
+                padding-left: 10px;
+            }
+        }
+    }
+    small{
+        display: block;
+        margin-top: 5px;
+        color: $text;
+        opacity: .7;
+    }
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    input{
+        height: 20px;
+        width: 20px;
+        appearance: none;
+        border-radius: 3px;
+        &:checked{
+            background-color: $main;
+            box-shadow: 0px 0px 1px $second;
+        }
+    }
+    label{
+        margin-left: 10px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}
+.radio{
+    display: flex;
+    align-items: center;
+    input{
+        height: 20px;
+        width: 20px;
+        appearance: none;
+        border-radius: 50%;
+        &:checked{
+            background-color: $main;
+            border: 2px solid white;
+            outline: 1px solid $second;
+        }
+    }
+    label{
+        margin-left: 10px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}
+
+input[type=submit]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: $main;
+    color: white;
+    cursor: pointer;
+}
