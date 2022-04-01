@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<link rel="icon" href="" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+	<link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+    <section class="login">
+        <div class="logo">
+			<div class="icon">S</div>
+			<h1><span>Syn</span>tra</h1>
+        </div>
+        <div class="switch">
+            <div class="light active">
+                <span class="material-icons-outlined">light_mode</span>
+            </div>
+            <div class="dark">
+                <span class="material-icons-outlined">dark_mode</span>
+            </div>
+        </div>
+        <div class="layer-1"></div>
+        <div class="layer-2"></div>
+        <div class="layer-3"></div>
+        <div class="layer-4"></div>
+        <div class="layer-5"></div>
+
+
+        <div class="login-form">
+            <h2>Login to Your Account</h2>
+            <form action="">
+                <div class="form-element">
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="form-element">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" name="Login" value="Log in">
+            </form>
+        </div>
+
+    </section>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script>
+		if (sessionStorage.getItem('darkmode') == 'true') {
+			$('html').addClass('dark-mode');
+			$('.switch .light').removeClass('active');
+			$('.switch .dark').addClass('active');
+		} 
+		$('.switch div').on("click", function(){
+			if($(this).hasClass('active')){
+				return null;
+			}else{
+				$('.switch div').removeClass('active');
+				let mode = $(this).attr('class');
+				$(this).addClass('active');
+
+				if(mode == 'dark'){
+					$('html').addClass('dark-mode');
+					sessionStorage.setItem("darkmode", true)
+				}
+				else{
+					$('html').removeClass('dark-mode');
+					sessionStorage.setItem("darkmode", false)
+				}
+				
+			}
+		
+		})
+	</script>
+</body>
+</html>

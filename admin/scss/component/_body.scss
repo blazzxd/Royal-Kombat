@@ -1,0 +1,32 @@
+$main: #5E69F8;
+$second: #2C38E1;
+$white: #F5F6FF;
+$title: #2D2D2D;
+$text: #686868;
+
+body{
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.spacer{
+    height: 80px;
+}
+
+.dark-mode{
+    filter: invert(1) hue-rotate(90deg);
+    background: #f5f5f5;
+    body{
+        background: #f5f5f5 !important;
+    }
+}
+
+a{
+    color: $main;
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $second;
+    }
+}

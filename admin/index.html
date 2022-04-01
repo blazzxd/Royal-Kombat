@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<link rel="icon" href="" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+	<link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+	<aside>
+		<div class="logo">
+			<div class="icon">S</div>
+			<h1><span>Syn</span>tra</h1>
+		</div>
+
+		<div class="menu">
+			<div class="list">
+				<div class="item active">
+					<a href="index.html">
+						<span class="material-icons-outlined">home</span>
+						Dashboard
+					</a>
+				</div>
+				<div class="item">
+					<a href="tables.html">
+                        <span class="material-icons-outlined">table_rows</span>
+					    Tables
+                    </a>
+				</div>
+				<div class="item">
+					<a href="forms.html">
+						<span class="material-icons-outlined">dashboard</span>
+						Forms
+					</a>
+				</div>
+				<div class="item dropdown">
+					<a href="">
+						<span class="material-icons-outlined">layers</span>
+						Pages
+					</a>
+					<div class="dropdown-menu">
+						<div class="item">
+							<a href="">
+								<span class="material-icons-outlined">login</span>
+								Login
+							</a>
+						</div>
+						
+						<div class="item">
+							<a href="">
+								<span class="material-icons-outlined">how_to_reg</span>
+								Register
+							</a>
+						</div>
+						
+						<div class="item">
+							<a href="">
+								<span class="material-icons-outlined">dangerous</span>
+								404
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="item">
+					<a href="">
+						<span class="material-icons-outlined">dashboard_customize</span>
+						Elements
+					</a>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="list">
+				<div class="item">
+					<a href="">
+						<span class="material-icons-outlined">settings</span>
+						Settings
+					</a>
+				</div>
+				<div class="item">
+					<a href="">
+						<span class="material-icons-outlined">help_outline</span>
+						Support
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main>
+		<div class="container-fluid">
+			<!-- Navbar -->
+			<nav>
+				<div class="switch">
+					<div class="light active">
+						<span class="material-icons-outlined">light_mode</span>
+					</div>
+					<div class="dark">
+						<span class="material-icons-outlined">dark_mode</span>
+					</div>
+				</div>
+				<div class="nav-items">
+					<div class="notification">
+						<span class="material-icons-outlined">notifications</span>
+					</div>
+					<div class="my-profile">
+						<div></div>
+					</div>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+
+
+			<div class="content">
+				
+				<h1 class="page-title">My Dashboard</h1>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card active">
+							<div class="icon"><span class="material-icons-outlined">folder</span></div>
+							<div class="content">
+								<h4>Google Drive</h4>
+								<div class="loader">
+									<div class="load"></div>
+									<div class="text">
+										<p>9.4 Gb</p>
+										<p>15 Gb</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="icon"><span class="material-icons-outlined">inventory_2</span></div>
+							<div class="content">
+								<h4>Dropbox</h4>
+								<div class="loader">
+									<div class="load"></div>
+									<div class="text">
+										<p>29.4 Gb</p>
+										<p>50 Gb</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="icon"><span class="material-icons-outlined">cloud</span></div>
+							<div class="content">
+								<h4>One Drive</h4>
+								<div class="loader">
+									<div class="load"></div>
+									<div class="text">
+										<p>18.4 Gb</p>
+										<p>200 Gb</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+				<div class="spacer"></div>
+
+				<h2 class="title">Recent Added</h2>
+
+				<table class="table">
+					<thead>
+
+						<tr>
+							<th>
+								<p>Name</p>
+							</th>
+							<th>
+								<p>Member</p>
+							</th>
+							<th>
+								<p>Last Modifie</p>
+							</th>
+							<th>
+								<!-- Options -->
+							</th>
+						</tr>
+
+					</thead>
+					<tbody>
+
+						<tr class="active">
+							<td>
+								<div class="icon"><span class="material-icons-outlined">picture_as_pdf</span></div>
+								Client suggestions
+							</td>
+							<td>
+								3 members
+							</td>
+							<td>
+								Feb 26,2022
+							</td>
+							<td>
+								<span class="material-icons-outlined">more_horiz</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="icon"><span class="material-icons-outlined">mail_lock</span></div>
+								File 3D Icon
+							</td>
+							<td>
+								Only me
+							</td>
+							<td>
+								Feb 26,2022
+							</td>
+							<td>
+								<span class="material-icons-outlined">more_horiz</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="icon"><span class="material-icons-outlined">upload_file</span></div>
+								Portfolio & CV
+							</td>
+							<td>
+								Only me
+							</td>
+							<td>
+								Feb 26,2022
+							</td>
+							<td>
+								<span class="material-icons-outlined">more_horiz</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="icon"><span class="material-icons-outlined">cloud</span></div>
+								Project Competitors
+							</td>
+							<td>
+								Only me
+							</td>
+							<td>
+								Feb 26,2022
+							</td>
+							<td>
+								<span class="material-icons-outlined">more_horiz</span>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</main>
+
+	<section class="right-side">
+		<h2>Quick Links</h2>
+
+		<div class="quick-cards">
+
+			<div class="quick-card">
+				<div class="content">
+					<div class="icon"><span class="material-icons-outlined">cloud</span></div>
+					<div class="text">
+						<p>Images</p>
+						<p><small>234 files</small></p>
+					</div>
+				</div>
+				<div class="usability">
+					<p>1.23 GB</p>
+				</div>
+			</div>
+
+			<div class="quick-card">
+				<div class="content">
+					<div class="icon"><span class="material-icons-outlined">inventory_2</span></div>
+					<div class="text">
+						<p>Documents</p>
+						<p><small>122 files</small></p>
+					</div>
+				</div>
+				<div class="usability">
+					<p>4.27 GB</p>
+				</div>
+			</div>
+
+			<div class="quick-card">
+				<div class="content">
+					<div class="icon"><span class="material-icons-outlined">folder</span></div>
+					<div class="text">
+						<p>Media Files</p>
+						<p><small>56 files</small></p>
+					</div>
+				</div>
+				<div class="usability">
+					<p>1.06 GB</p>
+				</div>
+			</div>
+
+			<div class="quick-card">
+				<div class="content">
+					<div class="icon"><span class="material-icons-outlined">dashboard</span></div>
+					<div class="text">
+						<p>Other Files</p>
+						<p><small>1,654 files</small></p>
+					</div>
+				</div>
+				<div class="usability">
+					<p>2.23 GB</p>
+				</div>
+			</div>
+
+			<div class="quick-card">
+				<div class="content">
+					<div class="icon"><span class="material-icons-outlined">settings</span></div>
+					<div class="text">
+						<p>Unknow Files</p>
+						<p><small>678 files</small></p>
+					</div>
+				</div>
+				<div class="usability">
+					<p>0.61 GB</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script>
+		if (sessionStorage.getItem('darkmode') == 'true') {
+			$('html').addClass('dark-mode');
+			$('.switch .light').removeClass('active');
+			$('.switch .dark').addClass('active');
+		} 
+		$('.switch div').on("click", function(){
+			if($(this).hasClass('active')){
+				return null;
+			}else{
+				$('.switch div').removeClass('active');
+				let mode = $(this).attr('class');
+				$(this).addClass('active');
+
+				if(mode == 'dark'){
+					$('html').addClass('dark-mode');
+					sessionStorage.setItem("darkmode", true)
+				}
+				else{
+					$('html').removeClass('dark-mode');
+					sessionStorage.setItem("darkmode", false)
+				}
+				
+			}
+		
+		})
+		$('.dropdown').on('click', function(e){
+			e.preventDefault()
+			$(this).find('.dropdown-menu').slideToggle();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+main{
+    background-color: $white;
+    width: calc(100% - 690px);
+    margin: 5vh auto;
+    margin-left: 320px;
+    padding: 30px 50px 60px;
+    border-radius: 40px;
+    .content{
+
+        .page-title{
+            font-size: 34px;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+    }
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 600;
+}

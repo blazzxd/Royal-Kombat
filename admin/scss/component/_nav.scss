@@ -1,0 +1,66 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .switch{
+        background-color: #fff;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        .light{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 60px;
+            span{
+                font-size: 22px;
+            }
+        }
+        .dark{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 60px;
+            span{
+                font-size: 22px;
+            }
+        }
+        .active{
+            background-color: $main;
+            color: $white;
+        }
+    }
+
+    .nav-items{
+        display: flex;
+        align-items: center;
+        .notification{
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .my-profile{
+            div{
+                height: 35px;
+                width: 35px;
+                background-color: $second;
+                border-radius: 50%;
+                border: 2px solid $white;
+                outline: 1px solid $main;
+            }
+        }
+
+    }
+}
