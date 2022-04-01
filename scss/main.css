@@ -5762,6 +5762,14 @@ main {
   transition: all .3s ease-in-out;
 }
 
+.section-9 h2 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
 .section-9 .card {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.13);
