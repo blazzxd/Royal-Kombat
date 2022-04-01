@@ -5864,4 +5864,75 @@ main {
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 4%;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+nav .logo {
+  width: 30%;
+}
+
+nav .logo h1 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+}
+
+nav .menu .item a {
+  padding: 10px 25px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav .menu .item a:hover {
+  color: #467AFF;
+}
+
+nav .button {
+  text-align: right;
+  width: 30%;
+}
+
+nav .button a {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color: #F2A217;
+  padding: 14px 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav .button a:hover {
+  background-color: #903CF2;
+}
 /*# sourceMappingURL=main.css.map */
