@@ -5869,12 +5869,21 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< Updated upstream
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> Stashed changes
   padding: 20px 4%;
   position: fixed;
   width: 100%;
@@ -5890,8 +5899,13 @@ nav .logo {
 }
 
 nav .logo h1 {
+<<<<<<< Updated upstream
   color: white;
   font-family: 'Quicksand', sans-serif;
+=======
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+>>>>>>> Stashed changes
   font-weight: 100;
   font-size: 28px;
 }
@@ -5900,6 +5914,7 @@ nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< Updated upstream
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5910,6 +5925,18 @@ nav .menu .item a {
   padding: 10px 25px;
   color: white;
   font-family: 'Quicksand', sans-serif;
+=======
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu .item a {
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px 25px;
+  color: white;
+>>>>>>> Stashed changes
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -5919,8 +5946,13 @@ nav .menu .item a:hover {
 }
 
 nav .button {
+<<<<<<< Updated upstream
   text-align: right;
   width: 30%;
+=======
+  width: 30%;
+  text-align: right;
+>>>>>>> Stashed changes
 }
 
 nav .button a {
