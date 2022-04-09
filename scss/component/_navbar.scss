@@ -1,4 +1,4 @@
-nav{
+.desktop-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,8 +26,81 @@ nav{
         display: flex;
         justify-content: center;
         width: 40%;
-
         .item{
+            @include media-breakpoint-down(md){
+                font-size: 20px;      
+            }
+            a{
+                padding: 10px 25px;
+                color: white;    
+                font-family: 'Quicksand', sans-serif;
+                transition: all .3s;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+
+    }
+
+    .button{
+        text-align: right;
+        width: 30%;
+        a{
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            background-color: $accent;
+            padding: 14px 30px;
+            transition: all .3s;
+            &:hover{
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+
+.mobile-menu{
+    display: none;
+    @include media-breakpoint-down(md){
+        display: block;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 4%;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 999;
+        background: rgba( 255, 255, 255, .2);
+        backdrop-filter: blur(40px);
+    }
+    .logo{
+        width: 30%;
+        h1{
+            color: white; 
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 100;
+            font-size: 28px;
+        }
+    }
+
+    .menu{
+        display: block;
+        position: fixed;
+        background: rgba( 255, 255, 255, .2);
+        backdrop-filter: blur(40px);
+        z-index: 999;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        
+        .item{
+            @include media-breakpoint-down(md){
+                font-size: 20px;      
+            }
             a{
                 padding: 10px 25px;
                 color: white;    

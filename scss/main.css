@@ -6129,7 +6129,7 @@ main {
           transform: rotate(-30deg);
 }
 
-nav {
+.desktop-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6150,23 +6150,23 @@ nav {
 }
 
 @media (max-width: 991px) {
-  nav {
+  .desktop-menu {
     display: none;
   }
 }
 
-nav .logo {
+.desktop-menu .logo {
   width: 30%;
 }
 
-nav .logo h1 {
+.desktop-menu .logo h1 {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   font-size: 28px;
 }
 
-nav .menu {
+.desktop-menu .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6176,7 +6176,13 @@ nav .menu {
   width: 40%;
 }
 
-nav .menu .item a {
+@media (max-width: 991px) {
+  .desktop-menu .menu .item {
+    font-size: 20px;
+  }
+}
+
+.desktop-menu .menu .item a {
   padding: 10px 25px;
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -6184,16 +6190,16 @@ nav .menu .item a {
   transition: all .3s;
 }
 
-nav .menu .item a:hover {
+.desktop-menu .menu .item a:hover {
   color: #467AFF;
 }
 
-nav .button {
+.desktop-menu .button {
   text-align: right;
   width: 30%;
 }
 
-nav .button a {
+.desktop-menu .button a {
   font-family: 'Quicksand', sans-serif;
   color: white;
   background-color: #F2A217;
@@ -6202,7 +6208,96 @@ nav .button a {
   transition: all .3s;
 }
 
-nav .button a:hover {
+.desktop-menu .button a:hover {
+  background-color: #903CF2;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.mobile-menu .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 4%;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+.mobile-menu .logo {
+  width: 30%;
+}
+
+.mobile-menu .logo h1 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.mobile-menu .menu {
+  display: block;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 999;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu .menu .item {
+    font-size: 20px;
+  }
+}
+
+.mobile-menu .menu .item a {
+  padding: 10px 25px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mobile-menu .menu .item a:hover {
+  color: #467AFF;
+}
+
+.mobile-menu .button {
+  text-align: right;
+  width: 30%;
+}
+
+.mobile-menu .button a {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color: #F2A217;
+  padding: 14px 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mobile-menu .button a:hover {
   background-color: #903CF2;
 }
 /*# sourceMappingURL=main.css.map */
