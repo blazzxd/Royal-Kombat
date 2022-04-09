@@ -53,6 +53,9 @@
 		</div>
 
 		<div class="menu">
+			<div class="close">
+				<span class="material-icons-outlined">close</span>
+			</div>
            <div class="content">
 				<div class="item"><a href="#">Home</a></div>
 				<div class="item"><a href="#">About</a></div>
@@ -419,7 +422,26 @@
 	  AOS.init();
 	</script>
 
-	  
+	<script>
+		$('.mobile-menu .hamburger').on("click", function(){
+			$('.mobile-menu .menu').fadeIn();
+			$('.mobile-menu .menu').animate({'width': '80%'}, function(){
+				$('.mobile-menu .close').fadeIn();
+				$('.mobile-menu .item').fadeIn();
+			});
+		})
+	</script>
+	<script>
+		$('.mobile-menu .close').on("click", function(){
+			$('.mobile-menu .close').fadeOut();
+			$('.mobile-menu .item').fadeOut( function(){
+				$('.mobile-menu .menu').animate({'width': '0%'}, function(){
+					$('.mobile-menu .menu').fadeIn();
+				});
+			});
+			
+		})
+	</script>
 </body>
 
 </html>

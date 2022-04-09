@@ -6243,18 +6243,33 @@ main {
 }
 
 .mobile-menu .logo {
-  width: 30%;
+  width: 70%;
 }
 
 .mobile-menu .logo h1 {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
-  font-size: 28px;
+  font-size: 24px;
+}
+
+.mobile-menu .hamburger {
+  cursor: pointer;
+}
+
+.mobile-menu .hamburger .line {
+  height: 1px;
+  background-color: #fff;
+  width: 30px;
+  margin-bottom: 7px;
+}
+
+.mobile-menu .hamburger .line:last-child {
+  margin-bottom: 0;
 }
 
 .mobile-menu .menu {
-  display: block;
+  display: none;
   position: fixed;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(40px);
@@ -6263,16 +6278,46 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
+  width: 0%;
 }
 
-@media (max-width: 991px) {
-  .mobile-menu .menu .item {
-    font-size: 20px;
-  }
+.mobile-menu .menu .close {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu .menu .close span {
+  font-size: 28px;
+}
+
+.mobile-menu .menu .content {
+  height: 100%;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-menu .menu .item {
+  display: none;
 }
 
 .mobile-menu .menu .item a {
-  padding: 10px 25px;
+  display: block;
+  padding: 20px 25px;
+  margin: 10px 0px;
+  font-size: 22px;
   color: white;
   font-family: 'Quicksand', sans-serif;
   -webkit-transition: all .3s;
