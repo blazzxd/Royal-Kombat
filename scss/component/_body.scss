@@ -276,13 +276,16 @@ main{
 .section-3{
     min-width: 90%;
     @include media-breakpoint-down(md){
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     h2{
         font-family: 'Cormorant Garamond', serif;
         color: white;
         font-size: 60px;
         margin-bottom: 10px;
+        @include media-breakpoint-down(md){
+           font-size: 40px;
+        }
         span{
             font-style: italic;
             color: $accent;
@@ -737,7 +740,8 @@ main{
     min-width: 90%;
     transition: all .3s ease-in-out;
     @include media-breakpoint-down(md){
-        display: none !important;
+        // display: none !important;
+        margin-bottom: 100px;
     }
     h2{
         text-align: center;
@@ -745,6 +749,9 @@ main{
         color: white;
         font-size: 50px;
         margin-bottom: 40px;
+        @include media-breakpoint-down(md){
+            font-size: 34px;
+        }
     }
     .card{
         border: 1px solid rgba( 255, 255, 255, .5);
@@ -761,17 +768,26 @@ main{
         img{
             height: 130px;
             margin-bottom: 20px;
+            @include media-breakpoint-down(md){
+                height: 80px;
+            }
         }
         h3{
             font-family: 'Cormorant Garamond', serif;
             color: white;
             font-size: 30px;
             margin-bottom: 20px;
+            @include media-breakpoint-down(md){
+                font-size: 24px;
+            }
         }
         p{
             color: white;
             font-family: 'Quicksand', sans-serif;
-            width: 100%;  
+            width: 100%;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+            }  
         }
     }
 }
@@ -797,6 +813,10 @@ main{
     padding: 30px 50px;
     overflow: hidden;
     display: none;
+    z-index: 9999999;
+    @include media-breakpoint-down(md){
+        overflow-y: scroll;
+    }
     .content{
         display: none;
     }
@@ -814,6 +834,10 @@ main{
         color: white;
         font-size: 50px;
         margin-bottom: 20px;
+        @include media-breakpoint-down(md){
+            font-size: 40px;
+            margin-top: 20px;
+        }
     }
     p{
         color: white;
@@ -826,5 +850,8 @@ main{
         right: -20%;
         height: 500px;
         transform: rotate(-30deg);
+        @include media-breakpoint-down(md){
+            display: none;
+        }
     }
 }

@@ -5412,7 +5412,7 @@ main {
 
 @media (max-width: 991px) {
   .section-3 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 
@@ -5421,6 +5421,12 @@ main {
   color: white;
   font-size: 60px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .section-3 h2 {
+    font-size: 40px;
+  }
 }
 
 .section-3 h2 span {
@@ -6022,7 +6028,7 @@ main {
 
 @media (max-width: 991px) {
   .section-9 {
-    display: none !important;
+    margin-bottom: 100px;
   }
 }
 
@@ -6032,6 +6038,12 @@ main {
   color: white;
   font-size: 50px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .section-9 h2 {
+    font-size: 34px;
+  }
 }
 
 .section-9 .card {
@@ -6057,6 +6069,12 @@ main {
   margin-bottom: 20px;
 }
 
+@media (max-width: 991px) {
+  .section-9 .card img {
+    height: 80px;
+  }
+}
+
 .section-9 .card h3 {
   font-family: 'Cormorant Garamond', serif;
   color: white;
@@ -6064,10 +6082,22 @@ main {
   margin-bottom: 20px;
 }
 
+@media (max-width: 991px) {
+  .section-9 .card h3 {
+    font-size: 24px;
+  }
+}
+
 .section-9 .card p {
   color: white;
   font-family: 'Quicksand', sans-serif;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .section-9 .card p {
+    font-size: 14px;
+  }
 }
 
 .overlay-9 {
@@ -6091,6 +6121,13 @@ main {
   padding: 30px 50px;
   overflow: hidden;
   display: none;
+  z-index: 9999999;
+}
+
+@media (max-width: 991px) {
+  .popUp-9 {
+    overflow-y: scroll;
+  }
 }
 
 .popUp-9 .content {
@@ -6114,6 +6151,13 @@ main {
   margin-bottom: 20px;
 }
 
+@media (max-width: 991px) {
+  .popUp-9 h2 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
 .popUp-9 p {
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -6127,6 +6171,12 @@ main {
   height: 500px;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
+}
+
+@media (max-width: 991px) {
+  .popUp-9 .icon {
+    display: none;
+  }
 }
 
 .desktop-menu {

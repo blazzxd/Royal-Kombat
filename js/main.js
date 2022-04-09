@@ -76,12 +76,12 @@ $('.section-9 .card').on("click", function(){
         overflowX: 'hidden'
     });
     $('.section-9').css({
-        transform: 'translateX(-40%)'
+        transform: 'translateX(-90%)'
     });
     $('.overlay-9').fadeIn();
     $('.popUp-9').show();
     $('.popUp-9').animate({
-        width: '40%'
+        width: '90%'
     }, 300, function(){
         $('.popUp-9 .content').fadeIn();
     });
