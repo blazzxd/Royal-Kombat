@@ -6246,6 +6246,7 @@ main {
 
 .desktop-menu .button {
   text-align: right;
+  display: none;
   width: 25%;
 }
 
