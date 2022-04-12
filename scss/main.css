@@ -6206,14 +6206,14 @@ main {
 }
 
 .desktop-menu .logo {
-  width: 30%;
+  width: 25%;
 }
 
 .desktop-menu .logo h1 {
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .desktop-menu .menu {
@@ -6223,7 +6223,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40%;
+  width: 50%;
 }
 
 @media (max-width: 991px) {
@@ -6246,7 +6246,7 @@ main {
 
 .desktop-menu .button {
   text-align: right;
-  width: 30%;
+  width: 25%;
 }
 
 .desktop-menu .button a {
