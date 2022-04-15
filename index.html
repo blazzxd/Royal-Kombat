@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="scss/aos.css" />
 	<link rel="stylesheet" href="scss/main.css">
 </head>
-<body>
+<body id="home">
 	
 
     <nav class='desktop-menu'>
@@ -27,12 +27,12 @@
 
         
         <div class="menu">
-            <div class="item"><a href="#">Home</a></div>
-            <div class="item"><a href="#">Who We Are</a></div>
-            <div class="item"><a href="#">Utility</a></div>
-            <div class="item"><a href="#">Roadmap</a></div>
-            <div class="item"><a href="#">Our Team</a></div>
-            <div class="item"><a href="#">FAQs</a></div>
+            <div class="item"><a class="scrollTo" href="#home">Home</a></div>
+            <div class="item"><a class="scrollTo" href="#who-we-are">Who We Are</a></div>
+            <div class="item"><a class="scrollTo" href="#utility">Utility</a></div>
+			<div class="item"><a class="scrollTo" href="#roadmap">Roadmap</a></div>
+			<div class="item"><a class="scrollTo" href="#our-team">Our Team</a></div>
+			<div class="item"><a class="scrollTo" href="#faqs">FAQs</a></div>
         </div>
 
         <div class="button">
@@ -57,18 +57,18 @@
 			<div class="close">
 				<span class="material-icons-outlined">close</span>
 			</div>
-           <div class="content">
-				<div class="item"><a href="#">Home</a></div>
-				<div class="item"><a href="#">Who We Are</a></div>
-				<div class="item"><a href="#">Utility</a></div>
-				<div class="item"><a href="#">Roadmap</a></div>
-				<div class="item"><a href="#">Our Team</a></div>
-				<div class="item"><a href="#">FAQs</a></div>
+			<div class="content">
+				<div class="item"><a class="scrollTo" href="#home">Home</a></div>
+				<div class="item"><a class="scrollTo" href="#who-we-are">Who We Are</a></div>
+				<div class="item"><a class="scrollTo" href="#utility">Utility</a></div>
+				<div class="item"><a class="scrollTo" href="#roadmap">Roadmap</a></div>
+				<div class="item"><a class="scrollTo" href="#our-team">Our Team</a></div>
+				<div class="item"><a class="scrollTo" href="#faqs">FAQs</a></div>
 		   </div>
 		</div>
 	</nav>
 
-	<div class="container-fluid section-1" >
+	<div class="container-fluid section-1">
 		<div class="row">
 			<div class="col-md-7">
 				<div class="container" data-aos="fade-up">
@@ -125,7 +125,7 @@
 		</div>
 	</div>
 
-	<div class="container section-2" style="display: flex; align-items: center; justify-content: center; min-height: 70vh;" data-aos="fade-up">
+	<div class="container section-2"style="display: flex; align-items: center; justify-content: center; min-height: 70vh;" data-aos="fade-up">
 		<div class="row">
 			<div class="col-md-4">
 				<div class="card">
@@ -151,7 +151,7 @@
 		</div>
 	</div>
 
-	<div class="container section-3" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+	<div class="container section-3" id="who-we-are" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
 		<div class="row align-items-center">
 			<div class="col-md-7">
 				<div class="images">
@@ -170,7 +170,7 @@
 		</div>
 	</div>
 
-	<div class="container section-9" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+	<div class="container section-9" id="utility" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
 		<div class="row">
             <div class="col-md-12">
                 <h2 data-aos="fade-up">Utility & Benefits</h2>
@@ -235,7 +235,7 @@
 	</div>
 
 
-	<div class="container section-5" style="display: flex; align-items: center;
+	<div class="container section-5" id="roadmap" style="display: flex; align-items: center;
 	justify-content: center; min-height: 100vh">
 		<div class="row no-gutters gx-5" style="width: 100%">
 			<div class="col-md-6">
@@ -309,7 +309,7 @@
 		</div>
 	</div>
 
-	<div class="container section-6" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+	<div class="container section-6" id="our-team" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
 		<div>
 			<h2 class="text-center">Our Team</h2>
 			<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa similique, quas labore totam eligendi adipisci perferendis quasi ratione! Vitae nihil ex culpa aspernatur quas pariatur. Repudiandae natus officiis dolore.</p>
@@ -346,7 +346,7 @@
 	</div>
 
 
-	<div class="container section-7" style="display: flex; align-items: center;justify-content: center; min-height: 100vh;">
+	<div class="container section-7" id="faqs" style="display: flex; align-items: center;justify-content: center; min-height: 100vh;">
 		<div class="row no-gutters">
 			<div class="col-md-4">
 				<div class="tab-pannel">
@@ -443,6 +443,16 @@
 			});
 			
 		})
+	</script>
+
+	<script>
+		 $(".scrollTo").on('click', function(e) {
+			e.preventDefault();
+			var target = $(this).attr('href');
+			$('html, body').animate({
+			scrollTop: ($(target).offset().top - 50)
+			}, 2000);
+		});
 	</script>
 </body>
 
