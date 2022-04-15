@@ -6209,21 +6209,18 @@ main {
   width: 25%;
 }
 
-.desktop-menu .logo h1 {
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 100;
-  font-size: 26px;
+.desktop-menu .logo img {
+  height: 50px;
 }
 
 .desktop-menu .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 75%;
 }
 
 @media (max-width: 991px) {
@@ -6297,11 +6294,8 @@ main {
   width: 70%;
 }
 
-.mobile-menu .logo h1 {
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 100;
-  font-size: 24px;
+.mobile-menu .logo img {
+  height: 35px;
 }
 
 .mobile-menu .hamburger {
