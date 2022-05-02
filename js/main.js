@@ -179,6 +179,7 @@ let section9Content = [
   
 
 $('.section-9 .card').on("click", function(){
+    let id = $(this).data('id')
     $('body').css({
         overflowX: 'hidden'
     });
@@ -191,6 +192,8 @@ $('.section-9 .card').on("click", function(){
         width: '90%'
     }, 300, function(){
         $('.popUp-9 .content').fadeIn();
+        $('.popUp-9 .content .text h2').text(section9Content[id]['title']);
+        $('.popUp-9 .content .text div').html(section9Content[id]['text']);
     });
 
 })

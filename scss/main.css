@@ -6158,6 +6158,34 @@ main {
   }
 }
 
+.popUp-9 h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .popUp-9 h3 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
+.popUp-9 h4 {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .popUp-9 h4 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
 .popUp-9 p {
   color: white;
   font-family: 'Quicksand', sans-serif;
