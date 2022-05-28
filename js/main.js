@@ -122,8 +122,8 @@ $('.section-9 .card').on("click", function(){
         width: '90%'
     }, 300, function(){
         $('.popUp-9 .content').fadeIn();
-        $('.popUp-9 .content .text h2').text(section9Content[id]['title']);
-        $('.popUp-9 .content .text div').html(section9Content[id]['text']);
+        $('.popUp-9 .content .text h2').text(section9Content[id-1]['title']);
+        $('.popUp-9 .content .text div').html(section9Content[id-1]['text']);
     });
 
 })
@@ -166,7 +166,6 @@ $('.section-5 .card').on('click', function(){
     }
     let card = $(this).data('card')
     let title = $(this).find('p').text();
-    console.log(sectionSlide4Content[card]['text'])
     $('.section-5 .content .number').text('0' + card)
     $('.section-5 .content h2').text(title)
     $('.section-5 .content').show();
@@ -180,7 +179,7 @@ $('.section-5 .card').on('click', function(){
             $('.section-5 .content .number').fadeIn();
             $('.section-5 .content h2').fadeIn();
             $('.section-5 .content .text').fadeIn();
-            $('.section-5 .content .text').html(sectionSlide4Content[card]['text']);
+            $('.section-5 .content .text').html(sectionSlide4Content[card-1]['text']);
             $('.section-5 .content .text p').fadeIn();
             $('.section-5 .content').addClass('visible');
 
